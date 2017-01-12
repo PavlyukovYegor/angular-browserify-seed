@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <a href="#/home"><img src="assets/img/home64.png"></a>
+  <img src="/assets/img/arrow.png" >
+  <a href="#/albums"><img src="/assets/img/album64.png"></a>
+</nav>
+<a class="google_link" href="https://www.google.com" target="_blank"><img src="assets/img/google.png"></a>
+<center>
+  <div ng-repeat="image in photos" class="photos_view">
+    <img src={{image.thumbnailUrl}} ng-click="reloadToPhoto(image.id)">
+    <p style="margin-top:20px;">{{image.title}}</p>
+  </div>
+</center>

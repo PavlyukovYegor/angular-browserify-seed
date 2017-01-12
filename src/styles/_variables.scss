@@ -1,3 +1,75 @@
-//
-// You can add/overwrite all your bower_components .sass variables here
-// ----------------------------------------------------------------------------------------------------
+.nav_album{
+  width: 90%;
+  height: 45px;
+  margin-left:5%;
+  padding-left: 0;
+  overflow: auto;
+  white-space: nowrap;
+  li {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 12px;
+    // margin-bottom: 5px;
+    // padding-top: 0px;
+    img {
+      margin-top: -4px;
+      margin-right: 2px;
+      float: left;
+    }
+  }
+}
+
+.photos_view{
+  height: 225px;
+  margin-top: 5px;
+  width: 30%;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.navbar{
+  display: block;
+  float: left;
+  margin-left: 5%;
+  margin-right: 50%;
+}
+
+.google_link{
+  float: right;
+  margin-right: 5%;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  height: 35px;
+  box-shadow: 0 0 5px #aaccff;
+  width: 100%;
+  background-color: #fff;
+  img {
+    float: right;
+  }
+  p {
+    float: right;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .photos_view{
+    height: 225px;
+    margin-top: 5px;
+    width: 350px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .photos_view{
+    width: 100%;
+    margin-top: 10px;
+  }
+}

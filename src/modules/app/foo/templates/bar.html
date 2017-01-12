@@ -1,1 +1,15 @@
-<pre>{{ 'HELLO' | translate:name }}
+<!-- <div> -->
+<nav >
+  <a class="navbar" href="#/home"><img src="assets/img/home64.png"></a>
+  <a class="google_link" href="https://www.google.com" target="_blank"><img src="assets/img/google.png"></a>
+  <ul class="nav_album">
+    <li ng-repeat="index in albums" ng-click="reloadToAlbum(index + 1)"><img src="assets/img/icon_album.png">Album {{index+1}} |</li>
+  </ul>
+</nav>
+<center>
+  <div ng-repeat="image in images" class="photos_view">
+    <img src={{image.thumbnailUrl}} ng-click="reloadToPhoto(image.id, image.albumId)">
+    <p style="margin-top:20px;">{{image.title}}</p>
+  </div>
+</center>
+<!-- </div> -->
